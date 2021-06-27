@@ -1,0 +1,38 @@
+<div class="detail-section">
+
+    <div class="container-fluid">
+       
+       <br><br>
+       <button (click)="getBack()" type="button" class="btn btn-primary">BACK</button>
+       
+       <br><br>
+
+       <img src="{{product.imageUrl}}" alt="" class="detail-img"/>
+       
+        
+            <h3>
+                {{product.name}}
+            </h3> 
+
+            <div class="price">
+                    {{product.unitPrice | currency:'INR'}}
+            </div>
+            
+           <!-- <a href="#" class="primary-btn">ADD TO CART</a> -->
+           
+           <button (click)="addToCart()" class="btn btn-primary btn-sm">ADD TO CART</button>
+
+           
+
+            <hr>
+       
+        <h4>Description</h4>
+        <p>{{product.description}}</p>
+
+    </div>
+
+</div>
+
+
+
+
